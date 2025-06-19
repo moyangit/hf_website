@@ -9,15 +9,7 @@ useHead({
 const localePath = useLocalePath()
 
 const { locale } = useI18n()
-const { data: hotBlogs, pending, error } = await useFetch(`https://strapi-production-54ec.up.railway.app/api/blogs?sort=viewCount:desc&pagination[limit]=3&&populate[coverImg]=true&populate[category]=true&&locale=${locale.value}`)
-const { data: newBlogs } = await useFetch(`https://strapi-production-54ec.up.railway.app/api/blogs?sort=publishedAt:desc&pagination[limit]=3&&populate[coverImg]=true&populate[category]=true&&locale=${locale.value}`)
 
-const { data: topBlogs } = await useFetch(`https://strapi-production-54ec.up.railway.app/api/blogs?pagination[limit]=1&populate[coverImg]=true&populate[category]=true&&locale=${locale.value}&&filters[pin]=true`)
-
-
-const { data: categorys } = await useFetch(`https://strapi-production-54ec.up.railway.app/api/categories?locale=${locale.value}&&filters[disable]=false`)
-
-const topBlog = computed(() => topBlogs.value?.data?.[0] || null)
 // import MarkdownIt from 'markdown-it'
 
 // const md = new MarkdownIt()

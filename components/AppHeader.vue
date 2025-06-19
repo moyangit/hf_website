@@ -40,9 +40,11 @@
         </button>
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12 text-gray-700 dark:text-gray-300">
-        <!-- <Popover class="relative">
+
+        <nuxt-link :to="localePath('index')" class="text-sm/6 font-semibold ">{{ $t('home') }}</nuxt-link>
+        <Popover class="relative">
           <PopoverButton class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
-            Services
+            {{ $t('Product') }}
             <ChevronDownIcon class="size-5 flex-none text-gray-400" aria-hidden="true" />
           </PopoverButton>
 
@@ -62,19 +64,18 @@
                   </div>
                 </div>
               </div>
-              <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+              <!-- <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                 <a v-for="item in callsToAction" :key="item.name" :href="item.href" class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
                   <component :is="item.icon" class="size-5 flex-none text-gray-400" aria-hidden="true" />
                   {{ item.name }}
                 </a>
-              </div>
+              </div> -->
             </PopoverPanel>
           </transition>
-        </Popover> -->
-
-        <nuxt-link :to="localePath('index')" class="text-sm/6 font-semibold ">{{ $t('home') }}</nuxt-link>
+        </Popover>
         <nuxt-link :to="localePath('price')" class="text-sm/6 font-semibold ">{{ $t('price') }}</nuxt-link>
         <nuxt-link :to="localePath('blogs')" class="text-sm/6 font-semibold">{{ $t('blogs') }}</nuxt-link>
+        <nuxt-link :to="localePath('faqs')" class="text-sm/6 font-semibold">{{ $t('FAQS') }}</nuxt-link>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-4">
 
