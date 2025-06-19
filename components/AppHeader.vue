@@ -1,13 +1,13 @@
 <template>
   <header class="bg-white/80 dark:bg-gray-900/90 shadow-sm sticky top-0 z-50 pl-20 pr-20 backdrop-blur-sm">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-      <div class="flex lg:flex-1">
+      <div class="flex lg:flex-none lg:w-[220px]">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
           <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
         </a>
       </div>
-      <div class="flex lg:hidden items-center space-x-1 ml-15">
+      <div class="flex lg:hidden items-center space-x-1 ml-10">
         <div class="relative" >
           <button 
             @click.stop="toggleLanguageDropdown"
@@ -74,7 +74,7 @@
 
         <nuxt-link :to="localePath('index')" class="text-sm/6 font-semibold ">{{ $t('home') }}</nuxt-link>
         <nuxt-link href="#" class="text-sm/6 font-semibold ">{{ $t('price') }}</nuxt-link>
-        <nuxt-link :to="localePath('blog')" class="text-sm/6 font-semibold">{{ $t('blog') }}</nuxt-link>
+        <nuxt-link :to="localePath('blogs')" class="text-sm/6 font-semibold">{{ $t('blogs') }}</nuxt-link>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-4">
 
