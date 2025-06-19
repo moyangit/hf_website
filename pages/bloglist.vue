@@ -19,8 +19,39 @@ function renderMarkdown(markdown) {
 }**/
 </script>
 <template>
-    <main class="flex-grow pt-20 pb-12 bg-gray-100/50 dark:bg-gray-900/95">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+  <div class="bg-white/80 dark:bg-gray-900/90">
+      <div class="p-5 relative z-10 overflow-hidden max-w-7xl mx-auto w-auto">
+        <!-- <div
+          class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-stroke/0 via-stroke dark:via-dark-3 to-stroke/0">
+        </div> -->
+        <div class="mx-auto w-auto p-4">
+          <div class="flex flex-wrap items-center -mx-4">
+            <div class="w-full px-4">
+              <div class="text-center">
+                <ul class="flex items-center justify-left gap-[10px]">
+                  <li>
+                    <NuxtLink to="/"
+                      class="flex items-center gap-[10px] text-base font-medium text-gray-900 dark:text-white">
+                      Home
+                    </NuxtLink>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="flex items-center gap-[10px] text-base font-medium text-gray-900 dark:text-white">
+                      <span class="text-gray-900 dark:text-white"> / </span>
+                      Blogs
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <main class="flex-grow pt-10 pb-12 bg-gray-100/50 dark:bg-gray-900/95">
+      <div class="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-auto">
         <div class="flex flex-col lg:flex-row gap-8">
           <!-- 左侧内容：博客列表 (占2/3宽度) -->
           <div class="lg:w-2/3 space-y-8">

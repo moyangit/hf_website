@@ -49,7 +49,7 @@ const topBlog = computed(() => topBlogs.value?.data?.[0] || null)
                   <li>
                     <a href="javascript:void(0)" class="flex items-center gap-[10px] text-base font-medium text-gray-900 dark:text-white">
                       <span class="text-gray-900 dark:text-white"> / </span>
-                      Blog
+                      Blogs
                     </a>
                   </li>
                 </ul>
@@ -187,12 +187,12 @@ const topBlog = computed(() => topBlogs.value?.data?.[0] || null)
   
         <div class="flex items-center justify-between p-4">
           <h2 class="text-xl font-semibold text-gray-900 dark:text-white">最热门</h2>
-          <a href="#" class="text-gray-900 dark:text-white transition-colors flex items-center">
-            更多
+          <nuxt-link :to="localePath('bloglist')" class="text-gray-900 dark:text-white transition-colors flex items-center">
+              更多
             <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
-          </a>
+          </nuxt-link>
         </div>
         <!-- <h2 class="p-5 md:pt-10 text-3xl font-semibold text-gray-900 dark:text-white">最热门</h2> -->
 

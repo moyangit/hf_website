@@ -73,7 +73,7 @@
         </Popover> -->
 
         <nuxt-link :to="localePath('index')" class="text-sm/6 font-semibold ">{{ $t('home') }}</nuxt-link>
-        <nuxt-link href="#" class="text-sm/6 font-semibold ">{{ $t('price') }}</nuxt-link>
+        <nuxt-link :to="localePath('price')" class="text-sm/6 font-semibold ">{{ $t('price') }}</nuxt-link>
         <nuxt-link :to="localePath('blogs')" class="text-sm/6 font-semibold">{{ $t('blogs') }}</nuxt-link>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-4">
